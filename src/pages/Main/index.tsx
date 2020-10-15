@@ -46,7 +46,7 @@ const Main: React.FC = () => {
       </FirstColumn>
 
       <SecondColumn>
-        <div>
+        <div id="apresentation">
           <h2>Apresentação</h2>
           <p>
             Olá! Meu nome é Matheus e atualmente estou com 18 anos de idade.
@@ -58,7 +58,7 @@ const Main: React.FC = () => {
           </p>
         </div>
 
-        <div>
+        <div id="professionalGoals">
           <h2>Objetivo profissional</h2>
           <p>
             Estou em busca de uma primeira colocação no mercado de trabalho para
@@ -67,7 +67,7 @@ const Main: React.FC = () => {
           </p>
         </div>
 
-        <div>
+        <div id="techs">
           <h2>Tecnologias que tenho experiência</h2>
           <p>- TypeScript</p>
           <p>- JavaScript</p>
@@ -77,21 +77,21 @@ const Main: React.FC = () => {
           <p>- Redux/Context</p>
         </div>
 
-        <div>
+        <div id="favoriteProjects">
           <h2>Projetos favoritos</h2>
           <p>- GoFinances</p>
           <p>- GoBarber (Web)</p>
           <p>- GoBarber (Mobile)</p>
         </div>
 
-        <div>
+        <div id="courses">
           <h2>Informações acadêmicas e Cursos</h2>
           <p>- Cursando Sistemas de Informação no IFES</p>
           <p>- Bootcamp GoStack - turma 12</p>
           <p>- Desenvolvimento web moderno</p>
         </div>
 
-        <div>
+        <div id="skills">
           <h2>Skills</h2>
           <p>- Não possuo dificuldade para me comunicar com outras pessoas.</p>
           <p>- Me considero uma pessoa bastante consequente.</p>

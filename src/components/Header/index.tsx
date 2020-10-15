@@ -6,12 +6,12 @@ const Header: React.FC = () => {
   return (
     <Container>
       <header>
-        <Navigate href="#">Apresentação</Navigate>
-        <Navigate href="#">Objetivo profissional</Navigate>
-        <Navigate href="#">Techs</Navigate>
-        <Navigate href="#">Projetos</Navigate>
-        <Navigate href="#">Cursos</Navigate>
-        <Navigate href="#">Skills</Navigate>
+        <Navigate href="#apresentation">Apresentação</Navigate>
+        <Navigate href="#professionalGoals">Objetivo profissional</Navigate>
+        <Navigate href="#techs">Techs</Navigate>
+        <Navigate href="#favoriteProjects">Projetos</Navigate>
+        <Navigate href="#courses">Cursos</Navigate>
+        <Navigate href="#skills">Skills</Navigate>
       </header>
     </Container>
   );
