@@ -4,6 +4,11 @@ export const Container = styled.div`
   display: flex;
   max-width: 1120px;
   margin: 0 auto;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const FirstColumn = styled.div`
@@ -12,6 +17,10 @@ export const FirstColumn = styled.div`
   flex-direction: column;
 
   margin-top: 32px;
+
+  @media (max-width: 1000px) {
+    align-items: center;
+  }
 `;
 
 export const TopContainer = styled.div`
@@ -75,6 +84,10 @@ export const SecondColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 1000px) {
+    width: 345px;
+  }
 
   div {
     width: 100%;
