@@ -5,20 +5,28 @@ export const Container = styled.div`
   background: #2c2c2c;
   margin-bottom: 24px;
 
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+
+  @media (max-width: 800px) {
+    display: flex;
+  }
 `;
 
 export const Header = styled.div`
-  width: 1120px;
+  width: 80%;
   padding: 16px 0;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  svg {
+    color: #e9f6ff;
+  }
 `;
 
 export const Name = styled.div`
@@ -30,16 +38,12 @@ export const Name = styled.div`
   }
 `;
 
-export const NavigationContainer = styled.div`
-  width: 70%;
-
+export const ButtonMenu = styled.button`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-`;
+  justify-content: center;
 
-export const Navigate = styled.a`
-  font-size: 20px;
-  color: #e9f6ff;
-  text-decoration: none;
+  background: transparent;
+  outline: none;
+  border: none;
 `;

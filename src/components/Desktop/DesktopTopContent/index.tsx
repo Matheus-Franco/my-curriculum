@@ -8,7 +8,7 @@ import {
   SiVisualstudio,
 } from 'react-icons/si';
 
-import ImageAvatar from '../../assets/perfil.png';
+import ImageAvatar from '../../../assets/perfil.png';
 
 import {
   Content,
@@ -21,7 +21,7 @@ import {
   Contact,
 } from './styles';
 
-const TopContentDesktop: React.FC = () => {
+const DesktopTopContent: React.FC = () => {
   return (
     <Content>
       <TopContainer>
@@ -63,4 +63,4 @@ const TopContentDesktop: React.FC = () => {
   );
 };
 
-export default TopContentDesktop;
+export default DesktopTopContent;
