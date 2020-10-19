@@ -4,6 +4,10 @@ export const Content = styled.div`
   width: 1120px;
 
   margin: 0 auto;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const TopContainer = styled.div`

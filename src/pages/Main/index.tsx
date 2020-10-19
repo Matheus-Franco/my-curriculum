@@ -4,6 +4,7 @@ import DesktopHeader from '../../components/Desktop/DesktopHeader';
 import DesktopTopContent from '../../components/Desktop/DesktopTopContent';
 
 import MobileHeader from '../../components/Mobile/MobileHeader';
+import MobileTopContent from '../../components/Mobile/MobileTopContent';
 
 import { Container } from './styles';
 
@@ -14,6 +15,7 @@ const Main: React.FC = () => {
       <MobileHeader />
 
       <DesktopTopContent />
+      <MobileTopContent />
     </Container>
   );
 };
