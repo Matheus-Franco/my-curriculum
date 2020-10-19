@@ -1,10 +1,4 @@
-import styled, { css } from 'styled-components';
-
-/*
-interface IType {
-  filled: boolean;
-}
-*/
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 80%;
@@ -19,12 +13,40 @@ export const Container = styled.div`
   }
 `;
 
+export const Avatar = styled.img`
+  height: 224px;
+  width: 192px;
+  border-radius: 8px;
+`;
+
+export const Description = styled.div`
+  color: #e9f6ff;
+  font-size: 20px;
+  margin: 8px 0;
+`;
+
+export const Contact = styled.div`
+  margin-bottom: 16px;
+
+  a {
+    color: #48cef7;
+
+    & + a {
+      margin-left: 16px;
+    }
+  }
+`;
+export const AvatarAndDescriptionAndContactContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 export const TechsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 8px 4px;
+  padding: 16px 4px;
 
   background: #2c2c2c;
   border-radius: 8px;
@@ -54,35 +76,5 @@ export const TechsContainer = styled.div`
 
   .vscode {
     color: #24a4eb;
-  }
-`;
-
-export const AvatarAndDescriptionAndContactContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const Avatar = styled.img`
-  height: 224px;
-  width: 192px;
-  border-radius: 8px;
-`;
-
-export const Description = styled.div`
-  color: #e9f6ff;
-  font-size: 20px;
-  margin: 8px 0;
-`;
-
-export const Contact = styled.div`
-  margin-bottom: 16px;
-
-  a {
-    color: #48cef7;
-    text-decoration: none;
-
-    & + a {
-      margin-left: 16px;
-    }
   }
 `;

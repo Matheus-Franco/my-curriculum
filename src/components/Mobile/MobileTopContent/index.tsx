@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaReact } from 'react-icons/fa';
 import {
   SiTypescript,
@@ -12,26 +12,14 @@ import ImageAvatar from '../../../assets/perfil.png';
 
 import {
   Container,
-  Avatar,
-  TechsContainer,
   AvatarAndDescriptionAndContactContainer,
+  Avatar,
   Description,
   Contact,
+  TechsContainer,
 } from './styles';
 
 const MobileTopContent: React.FC = () => {
-  /*
-  const [isFilled, setIsFilled] = useState<boolean>(false);
-
-  function handleClick(): void {
-    setTimeout(() => {
-      setIsFilled(false);
-    }, 1500);
-
-    setIsFilled(true);
-  }
-    */
-
   return (
     <Container>
       <AvatarAndDescriptionAndContactContainer>
@@ -58,15 +46,13 @@ const MobileTopContent: React.FC = () => {
       </AvatarAndDescriptionAndContactContainer>
 
       <TechsContainer>
-        <TechsContainer>
-          <FaReact size={48} className="react" />
-          <SiTypescript size={48} className="ts" />
-          <SiJavascript size={48} className="js" />
+        <FaReact size={48} className="react" />
+        <SiTypescript size={48} className="ts" />
+        <SiJavascript size={48} className="js" />
 
-          <SiCss3 size={48} className="css" />
-          <SiGithub size={48} className="github" />
-          <SiVisualstudio size={48} className="vscode" />
-        </TechsContainer>
+        <SiCss3 size={48} className="css" />
+        <SiGithub size={48} className="github" />
+        <SiVisualstudio size={48} className="vscode" />
       </TechsContainer>
     </Container>
   );
