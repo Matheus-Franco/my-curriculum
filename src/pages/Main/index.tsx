@@ -6,6 +6,7 @@ import DesktopCenter from '../../components/Desktop/DesktopCenter';
 
 import MobileHeader from '../../components/Mobile/MobileHeader';
 import MobileTopContent from '../../components/Mobile/MobileTopContent';
+import MobileCenter from '../../components/Mobile/MobileCenter';
 
 import { Container } from './styles';
 
@@ -19,6 +20,7 @@ const Main: React.FC = () => {
       <MobileTopContent />
 
       <DesktopCenter />
+      <MobileCenter />
     </Container>
   );
 };
