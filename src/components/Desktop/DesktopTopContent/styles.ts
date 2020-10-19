@@ -31,7 +31,7 @@ export const TechsContainer = styled.div`
   width: 700px;
   border-radius: 8px;
   background: #2c2c2c;
-  border: 1px solid #0179cb;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   align-items: center;
   justify-content: space-between;
