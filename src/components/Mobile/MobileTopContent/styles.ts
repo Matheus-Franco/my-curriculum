@@ -1,4 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+/*
+interface IType {
+  filled: boolean;
+}
+*/
 
 export const Container = styled.div`
   width: 80%;
@@ -6,7 +12,6 @@ export const Container = styled.div`
   margin: 0 auto;
 
   display: none;
-  justify-content: center;
   flex-direction: column;
 
   @media (max-width: 800px) {
@@ -14,50 +19,15 @@ export const Container = styled.div`
   }
 `;
 
-export const AvatarAndDescriptionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const Avatar = styled.img`
-  height: 128px;
-  width: 128px;
-  border-radius: 8px;
-`;
-
-export const Description = styled.div`
-  color: #e9f6ff;
-  font-size: 18px;
-  width: 100%;
-
-  display: flex;
-  align-items: flex-end;
-
-  margin-top: 16px;
-`;
-
-export const TechsAndContactContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 export const TechsContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  margin-top: 16px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 4px;
+
   background: #2c2c2c;
-  padding: 16px;
   border-radius: 8px;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
-
-  div {
-    display: flex;
-    justify-content: space-between;
-
-    & + div {
-      margin-top: 16px;
-    }
-  }
 
   svg {
     border-radius: 60px;
@@ -87,15 +57,29 @@ export const TechsContainer = styled.div`
   }
 `;
 
-export const Contact = styled.div`
+export const AvatarAndDescriptionAndContactContainer = styled.div`
   display: flex;
+  flex-direction: column;
+`;
 
-  padding: 16px 0;
+export const Avatar = styled.img`
+  height: 224px;
+  width: 192px;
+  border-radius: 8px;
+`;
+
+export const Description = styled.div`
+  color: #e9f6ff;
+  font-size: 20px;
+  margin: 8px 0;
+`;
+
+export const Contact = styled.div`
+  margin-bottom: 16px;
 
   a {
-    color: #e9f6ff;
+    color: #48cef7;
     text-decoration: none;
-    font-size: 18px;
 
     & + a {
       margin-left: 16px;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaReact } from 'react-icons/fa';
 import {
   SiTypescript,
@@ -12,38 +12,32 @@ import ImageAvatar from '../../../assets/perfil.png';
 
 import {
   Container,
-  AvatarAndDescriptionContainer,
   Avatar,
   TechsContainer,
-  TechsAndContactContainer,
+  AvatarAndDescriptionAndContactContainer,
   Description,
   Contact,
 } from './styles';
 
 const MobileTopContent: React.FC = () => {
+  /*
+  const [isFilled, setIsFilled] = useState<boolean>(false);
+
+  function handleClick(): void {
+    setTimeout(() => {
+      setIsFilled(false);
+    }, 1500);
+
+    setIsFilled(true);
+  }
+    */
+
   return (
     <Container>
-      <AvatarAndDescriptionContainer>
-        <Avatar src={ImageAvatar} />
+      <AvatarAndDescriptionAndContactContainer>
+        <Avatar src={ImageAvatar} alt="Avatar" />
 
         <Description>Front-end Developer</Description>
-      </AvatarAndDescriptionContainer>
-
-      <TechsAndContactContainer>
-        <TechsContainer>
-          <div>
-            <FaReact size={48} className="react" />
-            <SiTypescript size={48} className="ts" />
-
-            <SiCss3 size={48} className="css" />
-          </div>
-
-          <div>
-            <SiJavascript size={48} className="js" />
-            <SiGithub size={48} className="github" />
-            <SiVisualstudio size={48} className="vscode" />
-          </div>
-        </TechsContainer>
 
         <Contact>
           <a
@@ -61,7 +55,19 @@ const MobileTopContent: React.FC = () => {
             Linkedin
           </a>
         </Contact>
-      </TechsAndContactContainer>
+      </AvatarAndDescriptionAndContactContainer>
+
+      <TechsContainer>
+        <TechsContainer>
+          <FaReact size={48} className="react" />
+          <SiTypescript size={48} className="ts" />
+          <SiJavascript size={48} className="js" />
+
+          <SiCss3 size={48} className="css" />
+          <SiGithub size={48} className="github" />
+          <SiVisualstudio size={48} className="vscode" />
+        </TechsContainer>
+      </TechsContainer>
     </Container>
   );
 };
