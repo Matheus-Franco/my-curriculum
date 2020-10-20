@@ -27,7 +27,7 @@ export const AvatarAndTechsContainer = styled.div`
 export const Avatar = styled.img`
   height: 200px;
   width: 200px;
-  border-radius: 8px;
+  border-radius: 50%;
 `;
 
 export const TechsContainer = styled.div<IType>`

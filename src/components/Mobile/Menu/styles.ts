@@ -55,4 +55,8 @@ export const Item = styled.a`
   font-size: 18px;
   color: #e9f6ff;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;

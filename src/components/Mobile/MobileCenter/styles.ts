@@ -7,7 +7,7 @@ interface IType {
 export const Container = styled.div`
   display: none;
   width: 100%;
-  margin-top: 48px;
+  margin-top: 32px;
 
   @media (max-width: 800px) {
     display: flex;

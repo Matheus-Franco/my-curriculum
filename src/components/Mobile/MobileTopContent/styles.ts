@@ -18,9 +18,9 @@ export const Container = styled.div`
 `;
 
 export const Avatar = styled.img`
-  height: 224px;
-  width: 192px;
-  border-radius: 8px;
+  height: 170px;
+  width: 170px;
+  border-radius: 55%;
 `;
 
 export const Description = styled.div`
@@ -42,6 +42,7 @@ export const Contact = styled.div`
 `;
 export const AvatarAndDescriptionAndContactContainer = styled.div`
   display: flex;
+  align-items: center;
   flex-direction: column;
 `;
 
