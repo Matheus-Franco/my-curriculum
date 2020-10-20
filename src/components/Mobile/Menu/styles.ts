@@ -1,5 +1,14 @@
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
+const appearFromTop = keyframes`
+    from {
+    opacity: 0;
+    transform: translateY(-30px);
+  } to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+`;
 interface IType {
   show: boolean;
 }
@@ -15,6 +24,7 @@ export const Container = styled.div<IType>`
 
   transition: 0.3s;
   transform: translateY(-100%);
+  animation: ${appearFromTop} 0.5s;
 
   ${props =>
     props.show &&

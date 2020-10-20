@@ -23,37 +23,37 @@ const Menu: React.FC = () => {
         <ItemsList>
           <Button onClick={handleFocusTechs} type="button">
             <Item href="#techs" onClick={handleShowMenu}>
-              Techs
+              - Techs
             </Item>
           </Button>
 
           <Button onClick={handleFocusApresentation} type="button">
             <Item href="#apresentation" onClick={handleShowMenu}>
-              Apresentação
+              - Apresentação
             </Item>
           </Button>
 
           <Button onClick={handleFocusGoals} type="button">
             <Item href="#professionalGoals" onClick={handleShowMenu}>
-              Objetivo profissional
+              - Objetivo profissional
             </Item>
           </Button>
 
           <Button onClick={handleFocusProjects} type="button">
             <Item href="#favoriteProjects" onClick={handleShowMenu}>
-              Projetos
+              - Projetos
             </Item>
           </Button>
 
           <Button onClick={handleFocusSkills} type="button">
             <Item href="#skills" onClick={handleShowMenu}>
-              Skills
+              - Skills
             </Item>
           </Button>
 
           <Button onClick={handleFocusCourses} type="button">
             <Item href="#courses" onClick={handleShowMenu}>
-              Cursos
+              - Cursos
             </Item>
           </Button>
         </ItemsList>

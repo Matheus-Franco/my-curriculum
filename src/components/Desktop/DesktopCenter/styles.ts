@@ -1,5 +1,14 @@
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
+const appearFromLeft = keyframes`
+    from {
+    opacity: 0;
+    transform: translateX(-50px);
+  } to {
+    opacity: 1;
+    transform: translateX(0)
+  }
+`;
 interface IType {
   focused: boolean;
 }
@@ -18,6 +27,8 @@ export const Content = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  animation: ${appearFromLeft} 1s;
 `;
 
 export const ApresentationContainer = styled.div<IType>`
