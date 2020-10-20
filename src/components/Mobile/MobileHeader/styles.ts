@@ -1,9 +1,19 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+interface IType {
+  margin: boolean;
+}
+
+export const Container = styled.div<IType>`
   width: 100%;
   background: #2c2c2c;
   margin-bottom: 24px;
+
+  ${props =>
+    props.margin &&
+    css`
+      margin-bottom: 0;
+    `}
 
   display: none;
   align-items: center;
