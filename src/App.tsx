@@ -2,7 +2,8 @@ import React from 'react';
 
 import GlobalStyle from './styles/global';
 
-import Header from './components/Header';
+import AppProvider from './hooks';
+
 import Main from './pages/Main';
 
 const App: React.FC = () => {
@@ -10,8 +11,9 @@ const App: React.FC = () => {
     <>
       <GlobalStyle />
 
-      <Header />
-      <Main />
+      <AppProvider>
+        <Main />
+      </AppProvider>
     </>
   );
 };

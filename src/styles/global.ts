@@ -9,7 +9,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #fff;
+    background: #383838;
     -webkit-font-smoothing: antialiased;
     font-family: 'Roboto', sans-serif;
   }
