@@ -3,7 +3,7 @@ import {
   FaHandPaper,
   FaLaptopCode,
   FaRegLightbulb,
-  FaProjectDiagram,
+  FaBook,
 } from 'react-icons/fa';
 import { BiTargetLock } from 'react-icons/bi';
 
@@ -84,8 +84,8 @@ const MobileCenter: React.FC = () => {
 
         <Courses focused={focusCourses}>
           <Title>
-            <FaProjectDiagram size={24} />
-            Projetos
+            <FaBook size={24} />
+            Cursos extras
           </Title>
           <Text>- Bootcamp GoStack (turma 12)</Text>
           <Text>- Desenvolvimento Web Moderno</Text>
