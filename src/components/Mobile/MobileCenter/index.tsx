@@ -7,6 +7,8 @@ import {
 } from 'react-icons/fa';
 import { BiTargetLock } from 'react-icons/bi';
 
+import { useFocus } from '../../../hooks/focus';
+
 import {
   Container,
   Content,
@@ -20,10 +22,18 @@ import {
 } from './styles';
 
 const MobileCenter: React.FC = () => {
+  const {
+    focusCourses,
+    focusApresentation,
+    focusGoals,
+    focusSkills,
+    focusProjects,
+  } = useFocus();
+
   return (
     <Container>
       <Content>
-        <ApresentationContainer>
+        <ApresentationContainer focused={focusApresentation}>
           <Title>
             <FaHandPaper size={24} />
             Apresentação
@@ -39,7 +49,7 @@ const MobileCenter: React.FC = () => {
           </Text>
         </ApresentationContainer>
 
-        <Goals>
+        <Goals focused={focusGoals}>
           <Title>
             <BiTargetLock size={24} />
             Objetivo profissional
@@ -51,7 +61,7 @@ const MobileCenter: React.FC = () => {
           </Text>
         </Goals>
 
-        <FavoriteProjects>
+        <FavoriteProjects focused={focusProjects}>
           <Title>
             <FaLaptopCode size={24} />
             Projetos favoritos
@@ -60,7 +70,7 @@ const MobileCenter: React.FC = () => {
           <Text>- GoBarber</Text>
         </FavoriteProjects>
 
-        <Skills>
+        <Skills focused={focusSkills}>
           <Title>
             <FaRegLightbulb size={24} />
             Skills
@@ -72,7 +82,7 @@ const MobileCenter: React.FC = () => {
           </Text>
         </Skills>
 
-        <Courses>
+        <Courses focused={focusCourses}>
           <Title>
             <FaProjectDiagram size={24} />
             Projetos

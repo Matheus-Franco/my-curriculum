@@ -8,6 +8,8 @@ import {
   SiVisualstudio,
 } from 'react-icons/si';
 
+import { useFocus } from '../../../hooks/focus';
+
 import ImageAvatar from '../../../assets/perfil.png';
 
 import {
@@ -20,6 +22,8 @@ import {
 } from './styles';
 
 const MobileTopContent: React.FC = () => {
+  const { focusTechs } = useFocus();
+
   return (
     <Container>
       <AvatarAndDescriptionAndContactContainer>
@@ -45,14 +49,14 @@ const MobileTopContent: React.FC = () => {
         </Contact>
       </AvatarAndDescriptionAndContactContainer>
 
-      <TechsContainer>
-        <FaReact size={48} className="react" />
-        <SiTypescript size={48} className="ts" />
-        <SiJavascript size={48} className="js" />
+      <TechsContainer focused={focusTechs}>
+        <FaReact size={40} className="react" />
+        <SiTypescript size={40} className="ts" />
+        <SiJavascript size={40} className="js" />
 
-        <SiCss3 size={48} className="css" />
-        <SiGithub size={48} className="github" />
-        <SiVisualstudio size={48} className="vscode" />
+        <SiCss3 size={40} className="css" />
+        <SiGithub size={40} className="github" />
+        <SiVisualstudio size={40} className="vscode" />
       </TechsContainer>
     </Container>
   );

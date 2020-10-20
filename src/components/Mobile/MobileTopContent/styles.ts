@@ -1,4 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+interface IType {
+  focused: boolean;
+}
 
 export const Container = styled.div`
   width: 80%;
@@ -41,7 +45,7 @@ export const AvatarAndDescriptionAndContactContainer = styled.div`
   flex-direction: column;
 `;
 
-export const TechsContainer = styled.div`
+export const TechsContainer = styled.div<IType>`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,6 +54,13 @@ export const TechsContainer = styled.div`
 
   background: #2c2c2c;
   border-radius: 8px;
+
+  ${props =>
+    props.focused &&
+    css`
+      border: 2px solid #48cef7;
+      box-shadow: none;
+    `}
 
   svg {
     border-radius: 60px;

@@ -11,6 +11,8 @@ export const Container = styled.div<IType>`
   z-index: 100;
   margin-bottom: 24px;
 
+  display: none;
+
   transition: 0.3s;
   transform: translateY(-100%);
 
@@ -19,6 +21,10 @@ export const Container = styled.div<IType>`
     css`
       transform: translateY(0);
     `};
+
+  @media (max-width: 800px) {
+    display: flex;
+  }
 `;
 
 export const Content = styled.div`
@@ -31,12 +37,22 @@ export const ItemsList = styled.ul`
   flex-direction: column;
 `;
 
+export const Button = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  background: transparent;
+  outline: none;
+  border: none;
+
+  & + button {
+    margin-top: 16px;
+  }
+`;
+
 export const Item = styled.a`
   font-size: 18px;
   color: #e9f6ff;
   text-decoration: none;
-
-  & + a {
-    margin-top: 16px;
-  }
 `;
