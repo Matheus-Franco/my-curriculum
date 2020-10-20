@@ -30,27 +30,28 @@ const DesktopHeader: React.FC = () => {
         </Name>
 
         <NavigationContainer>
+          <Button onClick={handleFocusTechs} type="button">
+            <Navigate href="#techs">Techs</Navigate>
+          </Button>
+
           <Button onClick={handleFocusApresentation} type="button">
             <Navigate href="#apresentation">Apresentação</Navigate>
           </Button>
+
           <Button onClick={handleFocusGoals} type="button">
             <Navigate href="#professionalGoals">Objetivo profissional</Navigate>
-          </Button>
-
-          <Button onClick={handleFocusTechs} type="button">
-            <Navigate href="#techs">Techs</Navigate>
           </Button>
 
           <Button onClick={handleFocusProjects} type="button">
             <Navigate href="#favoriteProjects">Projetos</Navigate>
           </Button>
 
-          <Button onClick={handleFocusCourses} type="button">
-            <Navigate href="#courses">Cursos</Navigate>
-          </Button>
-
           <Button onClick={handleFocusSkills} type="button">
             <Navigate href="#skills">Skills</Navigate>
+          </Button>
+
+          <Button onClick={handleFocusCourses} type="button">
+            <Navigate href="#courses">Cursos</Navigate>
           </Button>
         </NavigationContainer>
       </Header>
