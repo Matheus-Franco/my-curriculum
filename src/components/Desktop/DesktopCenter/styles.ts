@@ -1,4 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+interface IType {
+  focused: boolean;
+}
 
 export const Container = styled.div`
   width: 1120px;
@@ -16,13 +20,20 @@ export const Content = styled.div`
   justify-content: space-between;
 `;
 
-export const ApresentationContainer = styled.div`
+export const ApresentationContainer = styled.div<IType>`
   width: 300px;
   height: 350px;
   border-radius: 8px;
   background: #2c2c2c;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
   padding: 16px;
+
+  ${props =>
+    props.focused &&
+    css`
+      border: 2px solid #48cef7;
+      box-shadow: none;
+    `}
 
   svg {
     color: #48cef7;
@@ -45,11 +56,18 @@ export const Text = styled.p`
   color: #e9f6ff;
 `;
 
-export const Goals = styled.div`
+export const Goals = styled.div<IType>`
   border-radius: 8px;
   background: #2c2c2c;
   padding: 16px;
   margin-bottom: 16px;
+
+  ${props =>
+    props.focused &&
+    css`
+      border: 2px solid #48cef7;
+      box-shadow: none;
+    `}
 
   svg {
     color: #48cef7;
@@ -57,11 +75,18 @@ export const Goals = styled.div`
   }
 `;
 
-export const FavoriteProjects = styled.div`
+export const FavoriteProjects = styled.div<IType>`
   border-radius: 8px;
   background: #2c2c2c;
   padding: 16px;
   margin-bottom: 16px;
+
+  ${props =>
+    props.focused &&
+    css`
+      border: 2px solid #48cef7;
+      box-shadow: none;
+    `}
 
   svg {
     color: #48cef7;
@@ -69,11 +94,18 @@ export const FavoriteProjects = styled.div`
   }
 `;
 
-export const Skills = styled.div`
+export const Skills = styled.div<IType>`
   border-radius: 8px;
   background: #2c2c2c;
   padding: 16px;
   margin-bottom: 16px;
+
+  ${props =>
+    props.focused &&
+    css`
+      border: 2px solid #48cef7;
+      box-shadow: none;
+    `}
 
   svg {
     color: #48cef7;
@@ -81,11 +113,18 @@ export const Skills = styled.div`
   }
 `;
 
-export const Courses = styled.div`
+export const Courses = styled.div<IType>`
   border-radius: 8px;
   background: #2c2c2c;
   padding: 16px;
   margin-bottom: 16px;
+
+  ${props =>
+    props.focused &&
+    css`
+      border: 2px solid #48cef7;
+      box-shadow: none;
+    `}
 
   svg {
     color: #48cef7;

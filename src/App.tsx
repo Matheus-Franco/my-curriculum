@@ -2,6 +2,8 @@ import React from 'react';
 
 import GlobalStyle from './styles/global';
 
+import AppProvider from './hooks';
+
 import Main from './pages/Main';
 
 const App: React.FC = () => {
@@ -9,7 +11,9 @@ const App: React.FC = () => {
     <>
       <GlobalStyle />
 
-      <Main />
+      <AppProvider>
+        <Main />
+      </AppProvider>
     </>
   );
 };

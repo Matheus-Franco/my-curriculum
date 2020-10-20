@@ -42,6 +42,16 @@ export const NavigationContainer = styled.div`
   justify-content: space-between;
 `;
 
+export const Button = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  outline: none;
+  border: none;
+`;
+
 export const Navigate = styled.a`
   font-size: 20px;
   color: #e9f6ff;

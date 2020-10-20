@@ -3,9 +3,11 @@ import {
   FaHandPaper,
   FaLaptopCode,
   FaRegLightbulb,
-  FaProjectDiagram,
+  FaBook,
 } from 'react-icons/fa';
 import { BiTargetLock } from 'react-icons/bi';
+
+import { useFocus } from '../../../hooks/focus';
 
 import {
   Container,
@@ -21,10 +23,18 @@ import {
 } from './styles';
 
 const DesktopCenter: React.FC = () => {
+  const {
+    focusCourses,
+    focusApresentation,
+    focusGoals,
+    focusSkills,
+    focusProjects,
+  } = useFocus();
+
   return (
     <Container>
       <Content>
-        <ApresentationContainer>
+        <ApresentationContainer focused={focusApresentation} id="apresentation">
           <Title>
             <FaHandPaper size={24} />
             Apresentação
@@ -41,7 +51,7 @@ const DesktopCenter: React.FC = () => {
         </ApresentationContainer>
 
         <InformationsContainer>
-          <Goals>
+          <Goals focused={focusGoals} id="professionalGoals">
             <Title>
               <BiTargetLock size={24} />
               Objetivo profissional
@@ -53,7 +63,7 @@ const DesktopCenter: React.FC = () => {
             </Text>
           </Goals>
 
-          <FavoriteProjects>
+          <FavoriteProjects focused={focusProjects} id="favoriteProjects">
             <Title>
               <FaLaptopCode size={24} />
               Projetos favoritos
@@ -62,7 +72,7 @@ const DesktopCenter: React.FC = () => {
             <Text>- GoBarber</Text>
           </FavoriteProjects>
 
-          <Skills>
+          <Skills focused={focusSkills} id="skills">
             <Title>
               <FaRegLightbulb size={24} />
               Skills
@@ -74,10 +84,10 @@ const DesktopCenter: React.FC = () => {
             </Text>
           </Skills>
 
-          <Courses>
+          <Courses focused={focusCourses} id="courses">
             <Title>
-              <FaProjectDiagram size={24} />
-              Projetos
+              <FaBook size={24} />
+              Cursos extras
             </Title>
             <Text>- Bootcamp GoStack (turma 12)</Text>
             <Text>- Desenvolvimento Web Moderno</Text>

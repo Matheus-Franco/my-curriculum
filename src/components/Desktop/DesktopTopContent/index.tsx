@@ -8,6 +8,8 @@ import {
   SiVisualstudio,
 } from 'react-icons/si';
 
+import { useFocus } from '../../../hooks/focus';
+
 import ImageAvatar from '../../../assets/perfil.png';
 
 import {
@@ -22,13 +24,15 @@ import {
 } from './styles';
 
 const DesktopTopContent: React.FC = () => {
+  const { focusTechs } = useFocus();
+
   return (
     <Content>
       <TopContainer>
         <AvatarAndTechsContainer>
           <Avatar src={ImageAvatar} />
 
-          <TechsContainer>
+          <TechsContainer focused={focusTechs} id="techs">
             <FaReact size={56} className="react" />
             <SiTypescript size={56} className="ts" />
             <SiJavascript size={56} className="js" />

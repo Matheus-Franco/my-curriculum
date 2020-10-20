@@ -1,4 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+interface IType {
+  focused: boolean;
+}
 
 export const Content = styled.div`
   width: 1120px;
@@ -26,7 +30,7 @@ export const Avatar = styled.img`
   border-radius: 8px;
 `;
 
-export const TechsContainer = styled.div`
+export const TechsContainer = styled.div<IType>`
   height: 200px;
   width: 700px;
   border-radius: 8px;
@@ -36,6 +40,13 @@ export const TechsContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 48px;
+
+  ${props =>
+    props.focused &&
+    css`
+      border: 2px solid #48cef7;
+      box-shadow: none;
+    `}
 
   svg {
     border-radius: 60px;
