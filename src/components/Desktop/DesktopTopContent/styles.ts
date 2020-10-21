@@ -34,6 +34,7 @@ export const TechsContainer = styled.div<IType>`
   height: 200px;
   width: 700px;
   border-radius: 8px;
+  border: 2px solid transparent;
   background: #2c2c2c;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
   display: flex;

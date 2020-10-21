@@ -32,6 +32,7 @@ export const Content = styled.div`
 
 export const ApresentationContainer = styled.div<IType>`
   border-radius: 8px;
+  border: 2px solid transparent;
   background: #2c2c2c;
   padding: 16px;
   margin-bottom: 16px;
@@ -62,6 +63,7 @@ export const Text = styled.div`
 
 export const Goals = styled.div<IType>`
   border-radius: 8px;
+  border: 2px solid transparent;
   background: #2c2c2c;
   padding: 16px;
   margin-bottom: 16px;
@@ -81,6 +83,7 @@ export const Goals = styled.div<IType>`
 
 export const FavoriteProjects = styled.div<IType>`
   border-radius: 8px;
+  border: 2px solid transparent;
   background: #2c2c2c;
   padding: 16px;
   margin-bottom: 16px;
@@ -100,6 +103,7 @@ export const FavoriteProjects = styled.div<IType>`
 
 export const Skills = styled.div<IType>`
   border-radius: 8px;
+  border: 2px solid transparent;
   background: #2c2c2c;
   padding: 16px;
   margin-bottom: 16px;
@@ -119,6 +123,7 @@ export const Skills = styled.div<IType>`
 
 export const Courses = styled.div<IType>`
   border-radius: 8px;
+  border: 2px solid transparent;
   background: #2c2c2c;
   padding: 16px;
   margin-bottom: 16px;

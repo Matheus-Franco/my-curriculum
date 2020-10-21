@@ -55,6 +55,7 @@ export const TechsContainer = styled.div<IType>`
 
   background: #2c2c2c;
   border-radius: 8px;
+  border: 2px solid transparent;
 
   ${props =>
     props.focused &&
