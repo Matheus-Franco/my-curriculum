@@ -96,17 +96,25 @@ export const Description = styled.div`
 
 export const Contact = styled.div`
   width: 700px;
-  padding: 16px;
+  padding: 24px 0;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 
   a {
     color: #e9f6ff;
     text-decoration: none;
-    margin: 0 24px;
     font-size: 18px;
     font-weight: 600;
+    opacity: 0.6;
+    transition: 0.3s;
+
+    & + a {
+      margin-left: 24px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
   }
 `;

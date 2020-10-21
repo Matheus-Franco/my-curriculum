@@ -26,17 +26,28 @@ export const Avatar = styled.img`
 export const Description = styled.div`
   color: #e9f6ff;
   font-size: 20px;
+  font-weight: 600;
   margin: 8px 0;
 `;
 
 export const Contact = styled.div`
   margin-bottom: 16px;
+  color: #e9f6ff;
+  text-decoration: none;
 
   a {
-    color: #48cef7;
+    color: #e9f6ff;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0.6;
+    transition: 0.3s;
 
     & + a {
       margin-left: 16px;
+    }
+
+    &:hover {
+      opacity: 1;
     }
   }
 `;
