@@ -76,9 +76,12 @@ const MobileCenter: React.FC = () => {
             Skills
           </Title>
           <Text>
-            Estou em busca de uma primeira colocação no mercado de trabalho para
-            que eu possa colocar em prática meus conhecimentos e aprender novas
-            tecnologias com pessoas mais experientes.
+            - Não possuo dificuldade para me comunicar com outras pessoas.
+          </Text>
+          <Text>- Me considero uma pessoa bastante consequente.</Text>
+          <Text>
+            - Gosto de ouvir diferentes opiniões antes de chegar a uma
+            conclusão.
           </Text>
         </Skills>
 
